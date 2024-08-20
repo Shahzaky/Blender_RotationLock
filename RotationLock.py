@@ -30,7 +30,7 @@ class VIEW3D_PT_view_rotation_lock_toggle(bpy.types.Panel):
         layout = self.layout
         view = context.space_data.region_3d
         row = layout.row()
-        row.prop(view, "lock_rotation", text="Lock View Rotation", toggle=True)
+        row.prop(view, "lock_rotation", text="Lock Rotation", toggle=True)
 
 def register():
     bpy.utils.register_class(VIEW3D_PT_view_rotation_lock_toggle)
